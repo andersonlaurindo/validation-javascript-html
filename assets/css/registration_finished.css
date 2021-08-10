@@ -1,0 +1,53 @@
+.registration-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+
+.registration-header__logo {
+    width: 2.625rem;
+    margin-bottom: 0.5rem;
+}
+
+.registration-header__title {
+    font-family: var(--fonte-familia-logo);
+    font-size: var(--fonte-tamanho-logo);
+    margin-bottom: 1rem;
+}
+
+.registration-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.registration-card__icone-finished {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    margin-bottom: 1rem;
+
+    background-image: url(../img/checkmark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.registration-card__title {
+    max-width: 20rem;
+}
+
+
+@media(min-width: 800px) {
+    .registration-header__logo {
+        width: 5.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .registration-header__title {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,8 @@
+.registration__descricao {
+    height: 15.75rem;
+}
+
+.registration__preco-container, .registration__descricao-container {
+    width: 50%;
+}
+
