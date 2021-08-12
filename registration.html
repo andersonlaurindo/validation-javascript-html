@@ -24,18 +24,18 @@
             <form action="./registration_finished.html" class="form flex flex--column">
                 <fieldset>
                     <legend class="form__subtitle">Main Information</legend>
-                    <div class="input-container">
-                        <input name="name" id="name" class="input" type="text" placeholder="Name" required>
+                    <div class="input-container input-container--invalido">
+                        <input name="name" id="name" class="input" type="text" placeholder="Name" required data-type = 'name'>
                         <label class="input-label" for="name">Name</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
                     <div class="input-container">
-                        <input name="email" id="email" class="input" type="email" placeholder="Email" required>
+                        <input name="email" id="email" class="input" type="email" placeholder="Email" required data-type = "email">
                         <label class="input-label" for="email">Email</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
                     <div class="input-container">
-                        <input name="password" id="password" class="input" type="password" placeholder="Password"
+                        <input name="password" id="password" class="input" type="password" placeholder="Password" data-type = "password"
                             required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                             title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
                         <label class="input-label" for="password">Password</label>
@@ -51,7 +51,7 @@
                     </div>
                     <div class="input-container">
                         <input name="socialnumber" id="socialnumber" class="input" type="text"
-                            placeholder="Social Number">
+                            placeholder="Social Number" data-type="socialNumber" required>
                         <label class="input-label" for="socialnumber">Social Number</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
@@ -59,23 +59,23 @@
                 <fieldset>
                     <legend class="form__subtitle">Address</legend>
                     <div class="input-container">
-                        <input name="zipcode" id="zipcode" class="input" type="text" placeholder="Zip Code">
-                        <label class="input-label" for="zipcode">Zip Code</label>
+                        <input name="zipCode" id="zipCode" class="input" type="text" placeholder="Zip Code" pattern="[\d]{5}-?[\d]{3}" required data-type="zipCode">
+                        <label class="input-label" for="zipCode">Zip Code</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
                     <div class="input-container">
-                        <input name="streetaddress" id="streetaddress" class="input" type="text"
-                            placeholder="Street Address">
-                        <label class="input-label" for="streetaddress">Street Address</label>
+                        <input name="streetAddress" id="streetAddress" class="input" type="text"
+                            placeholder="Street Address" data-type="streetAddress" required>
+                        <label class="input-label" for="streetAddress">Street Address</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
                     <div class="input-container">
-                        <input name="city" id="city" class="input" type="text" placeholder="City">
+                        <input name="city" id="city" class="input" type="text" placeholder="City" data-type="city" required>
                         <label class="input-label" for="city">City</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>
                     <div class="input-container">
-                        <input name="state" id="state" class="input" type="text" placeholder="State">
+                        <input name="state" id="state" class="input" type="text" placeholder="State" data-type="state" required>
                         <label class="input-label" for="state">State</label>
                         <span class="input-error-message">Invalid field.</span>
                     </div>

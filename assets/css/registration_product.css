@@ -1,8 +1,8 @@
-.registration__descricao {
+.registration__description {
     height: 15.75rem;
 }
 
-.registration__preco-container, .registration__descricao-container {
+.registration__price-container, .registration__description-container {
     width: 50%;
 }
 

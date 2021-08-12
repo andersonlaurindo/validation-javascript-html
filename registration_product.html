@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doguito Petshop | registration de produto</title>
+    <title>Registration product</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./assets/css/base/base.css">
     <link rel="stylesheet" href="./assets/css/components/header.css">
     <link rel="stylesheet" href="./assets/css/components/card.css">
-    <link rel="stylesheet" href="./assets/css/cadastra_cliente.css">
-    <link rel="stylesheet" href="./assets/css/components/inputs.css">
+        <link rel="stylesheet" href="./assets/css/components/inputs.css">
     <link rel="stylesheet" href="./assets/css/components/button.css">
-    <link rel="stylesheet" href="./assets/css/registration_produto.css">
+    <link rel="stylesheet" href="./assets/css/registration_product.css">
 </head>
 <body>
     <header class="header container">
@@ -20,9 +19,7 @@
         <nav>
             <ul class="header__lista-navegacao">
                 <li class="header__link"><a href="#">Dashboard</a></li>
-                <li class="header__link"><a href="#">Produtos</a></li>
-                <li class="header__link"><a href="lista_cliente.html">Clientes </a></li>
-                <li class="header__link"><a href="#">Pets</a></li>
+                <li class="header__link"><a href="#">Products</a></li>
             </ul>
         </nav>
     </header>
@@ -31,23 +28,25 @@
             <h1 class="card__title">Create a product</h1>
             <form action="./registration_produto_finished.html" class="flex flex--column">
                 <div class="input-container">
-                    <input name="name" id="name" class="input" type="text" placeholder="name">
-                    <label class="input-label" for="name">name</label>
+                    <input name="name" id="name" class="input" type="text" placeholder="name" data-type="name" required>
+                    <label class="input-label" for="name">Name</label>
                     <span class="input-error-message">Invalid field.</span>
                 </div>
-                <div class="input-container registration__preco-container">
-                    <input name="preco" id="preco" class="input" type="text" placeholder="Preço">
-                    <label class="input-label" for="preco">Preço</label>
+                <div class="input-container registration__price-container">
+                    <input name="price" id="price" class="input" type="text" placeholder="Price" data-type="price" required>
+                    <label class="input-label" for="price">Price</label>
                     <span class="input-error-message">Invalid field.</span>
                 </div>
-                <div class="input-container registration__descricao-container">
-                    <input class="input" name="descricao" id="descricao" placeholder="Descrição">
-                    <label class="input-label" for="descricao">Descrição</label>
+                <div class="input-container registration__description-container">
+                    <input class="input" name="description" id="description" placeholder="Description">
+                    <label class="input-label" for="description">Description</label>
                     <span class="input-error-message">Invalid field.</span>
                 </div>
-                <button class="button">Cadastrar produto</button>
+                <button class="button">Save</button>
             </form>
         </section>
     </main>
 </body>
+<script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+<script type="module" src="./assets/js/app.js"></script>
 </html>
